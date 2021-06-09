@@ -82,7 +82,7 @@ def get_fft(signal):
             X2 += [fft_e[i]-sum_odd[i]]
             X3 += [fft_e[i+int(len(signal)/4)]+1j*diff_odd[i]]
         #note that indices for fft_e at quarters X1 and X3 start at N/4 and ends at N/2-1
-
+        
         #merging DFT quarters
         return X0+X1+X2+X3
 
