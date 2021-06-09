@@ -26,7 +26,7 @@
     $ python3 coe164_mp02-fft.py < in_[date]_[time].txt > out_[date]_[time].txt
     ```
 
-### 4. Author
+### 3. Author
 
 - Joie Angelo Llantero
 - Jansen Wong
