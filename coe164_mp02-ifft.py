@@ -2,7 +2,7 @@ import math
 import cmath
 
 
-# We pass the complex numbers to this function to remove the trailinig zeroes, e.g., 
+# we pass the complex numbers to this function to remove the trailing zeroes, e.g.,
 # ['-4.000000+0.000000j'] would become [(-4+0j)].
 def reformat_fft_output(data):
     output = []
@@ -37,7 +37,7 @@ def get_ifft(data):
     elif len(data) == 1:
         data[0] = round(data[0].real)
         return data
-    
+
     else:
         # we divide the array data into quarters and save that into a list
         inputs = [data[i:i + int(len(data)/4)] for i in range(0, len(data), (int(len(data)/4)))]
@@ -51,9 +51,9 @@ def get_ifft(data):
         sum_odd = []
         diff_odd = []
         fft_e1 = []
-        fft_e2 = [] 
+        fft_e2 = []
 
-        # by using the quarters we stored earlier, i.e., X0, X1, X2, X3, 
+        # by using the quarters we stored earlier, i.e., X0, X1, X2, X3,
         # we find the list of the sum and difference of the odd-indexed signal slices
         for i in range(int(len(X0))):
             e_val = (X0[i] + X2[i]) / 2
@@ -110,7 +110,7 @@ def get_ifft(data):
 if __name__ == '__main__':
     # we first obtain the first input which determined the total number of signals
     T = input()
-    
+
     inputs = []
     outputs = []
 
