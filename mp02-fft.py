@@ -96,6 +96,7 @@ if __name__ == '__main__':
 
     #output
     output_signal = []
+    print(T)
     for i in range(T):
         input_signal[i] = input_signal[i].split()
         input_signal[i] = [int(item) for item in input_signal[i]] #converting all items in list to int
