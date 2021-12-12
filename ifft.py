@@ -1,4 +1,5 @@
-# Joie Angelo Llantero - 201789868
+# Joie Angelo Llantero - 201789868 (IFFT)
+# Jansen Wong - 2018-07475 (FFT)
 
 import math
 import cmath
